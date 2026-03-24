@@ -8,7 +8,7 @@ function HeroPage() {
                  <h2>Land Your Dream Job <br/>in Minutes🚀 </h2>
         </div>
    
-        <h5>Upload your resume and paste Job Description. We'll generate all 7 tailored documents instantly.</h5>
+        <h5>Upload your resume and paste Job Description. We'll generate all super tailored documents instantly.</h5>
         <ul><li>✨AI-Power</li>
         <li>⚡Instant result</li>
         <li>📄Resume Optimzier</li></ul>
