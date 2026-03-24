@@ -1,0 +1,21 @@
+.result-container{
+    margin-top: 40px;
+}
+.scroll-caption {
+  text-align: center;
+  color: rgb(74, 74, 74);
+  font-size: 1.3em;
+  position: relative;
+  
+  padding-top: 6vh;
+}
+.scroll-caption::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80vw;
+  height: 1px;
+  background-color: rgb(66, 66, 66);
+}

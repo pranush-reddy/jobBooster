@@ -1,0 +1,265 @@
+/* HeroPage.css - Responsive Hero Section */
+
+.hero {
+  height: auto;
+  min-height: 60vh;
+  padding: 60px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.hero h2 {
+  font-size: 3.5em;
+  text-align: center;
+  margin: 0;
+  color: rgb(36, 36, 36);
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.hero h5 {
+  width: 70vw;
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 1.2em;
+  color: rgb(85, 85, 85);
+  font-weight: 400;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+
+.hero ul {
+  display: flex;
+  margin: 30px auto 0;
+  width: 70vw;
+  max-width: 900px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.hero ul li {
+  list-style: none;
+  background: linear-gradient(135deg, rgb(158, 90, 222) 0%, rgb(138, 70, 202) 100%);
+  padding: 10px 24px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(158, 90, 222, 0.2);
+}
+
+.hero ul li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(158, 90, 222, 0.3);
+  background: linear-gradient(135deg, rgb(168, 100, 232) 0%, rgb(148, 80, 212) 100%);
+}
+
+.hero ul li:active {
+  transform: translateY(0);
+}
+
+/* Responsive Breakpoints */
+
+/* Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+  .hero {
+    min-height: 50vh;
+    padding: 50px 20px 35px;
+  }
+  
+  .hero h2 {
+    font-size: 2.8em;
+  }
+  
+  .hero h5 {
+    width: 80vw;
+    font-size: 1.1em;
+    margin: 18px auto;
+  }
+  
+  .hero ul {
+    width: 80vw;
+    gap: 15px;
+  }
+  
+  .hero ul li {
+    padding: 8px 20px;
+    font-size: 13px;
+  }
+}
+
+/* Mobile Landscape (480px - 768px) */
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding: 40px 15px 30px;
+  }
+  
+  .hero-land {
+    padding: 15px;
+  }
+  
+  .hero h2 {
+    font-size: 2.2em;
+  }
+  
+  .hero h2 br {
+    display: none;
+  }
+  
+  .hero h5 {
+    width: 90vw;
+    font-size: 1em;
+    margin: 15px auto;
+  }
+  
+  .hero ul {
+    width: 90vw;
+    gap: 12px;
+    justify-content: center;
+  }
+  
+  .hero ul li {
+    padding: 7px 18px;
+    font-size: 12px;
+    white-space: normal;
+    text-align: center;
+  }
+}
+
+/* Mobile Portrait (320px - 480px) */
+@media (max-width: 480px) {
+  .hero {
+    padding: 35px 12px 25px;
+  }
+  
+  .hero h2 {
+    font-size: 1.8em;
+  }
+  
+  .hero h5 {
+    width: 95vw;
+    font-size: 0.95em;
+    margin: 12px auto;
+  }
+  
+  .hero ul {
+    width: 95vw;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .hero ul li {
+    padding: 6px 16px;
+    font-size: 11px;
+  }
+}
+
+/* Small Mobile (under 360px) */
+@media (max-width: 360px) {
+  .hero {
+    padding: 30px 10px 20px;
+  }
+  
+  .hero h2 {
+    font-size: 1.5em;
+  }
+  
+  .hero h5 {
+    font-size: 0.85em;
+  }
+  
+  .hero ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .hero ul li {
+    width: auto;
+    min-width: 140px;
+    padding: 8px 16px;
+    font-size: 11px;
+    white-space: nowrap;
+  }
+}
+
+/* Large Desktop (above 1440px) */
+@media (min-width: 1440px) {
+  .hero {
+    min-height: 70vh;
+    padding: 80px 20px 60px;
+  }
+  
+  .hero h2 {
+    font-size: 4.5em;
+  }
+  
+  .hero h5 {
+    font-size: 1.4em;
+    width: 60vw;
+    max-width: 1000px;
+  }
+  
+  .hero ul {
+    width: 60vw;
+    max-width: 1000px;
+    gap: 25px;
+  }
+  
+  .hero ul li {
+    padding: 12px 28px;
+    font-size: 16px;
+  }
+}
+
+/* Animation for content */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero h2,
+.hero h5,
+.hero ul {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.hero h2 {
+  animation-delay: 0.1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.hero h5 {
+  animation-delay: 0.3s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.hero ul {
+  animation-delay: 0.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}

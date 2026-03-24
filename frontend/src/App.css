@@ -1,0 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
+}html{
+  width: 100vw;
+}
+body{
+  padding: 0px;
+  margin: 0px;
+  width: 100vw;
+  overflow-x: hidden;
+  background: rgb(248, 250, 251);
+}
