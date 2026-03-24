@@ -28,7 +28,7 @@ public class SecurityConfig {
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
-        config.addAllowedOrigin("http://localhost:5173","https://job-booster-omega.vercel.app");
+        config.addAllowedOrigin((List.of("http://localhost:5173","https://job-booster-omega.vercel.app"));
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
 
